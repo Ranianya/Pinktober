@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Risk Ingredient Checker</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1 style="color: rgb(242, 139, 156);">PinkCheck</h1>
+		
+        <nav style=" margin-right: 20px;">
+            <ul>
+                 <li><a href="hh.html">Home</a></li>
+			        	<li><a href="About us">About Us</a></li>
+                <li><a href="algeb.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>     
+
+<div id="titre" >
+    <div style="display: flex;margin-top:2%;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbd0PJkoGPmVfxUlwkk76eesu1ajaidza9yg&s" alt="PinkCheck" style=" width: 95px; height: 95px; border-radius:50%; margin-left:40px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRysb2o26uHx4xasaWy40G8uqVu0oUyYgbaYw&s" alt="PinkCheck" style=" width: 150px;height: 150px; border-radius:40%; margin-right:30px; margin-left:750px;" >  
+</div> 
+    <h1>Protect your health with <div style="color:rgb(244, 127, 146) ;">breast cancer prevention</div></h1>
+    <div id="inputtag">
+          <div id="checkbtn"></div>
+           <input type="text" id="ingredient" placeholder="search for any service..." >
+               <div id="checkbtn">
+                  <button id="checkButton">Check</button>
+               </div>
+           <p id="result"></p>
+    </div>
+    
+</div>
+<hr>
+<div id="box" style="display: flex;">
+    <img src="https://cdn-icons-png.freepik.com/256/16660/16660815.png?ga=GA1.1.891441325.1711750970&semt=ais_hybrid" alt="research" style="width:50px; height:50px;margin-top:100px;margin-right:0px;">
+   <div class="parag">
+    <h3><a href="page3.html"> Check Ingredient</a></h3>
+    <div id="box1"   >
+     <p class="parag" ><li >Is this ingredient linked to breast cancer?</li><br> We check the latest studies for you.</p>
+    </div>
+   </div>
+   <div class="parag">
+    <h3 ><a href="page2.html">Documentation</a></h3>
+    <div id="box2" >
+        <p ><li >Your health, our priority : </li><br>reliable information on breast cancer prevention.</p> 
+    </div>
+    <img src="https://cdn-icons-png.freepik.com/128/8825/8825291.png" alt="documentation" style="width:70px; height:70px;margin-top:50px;margin-left:20px;">
+   </div>
+</div>
+    <script>
+        // List of ingredients that may increase cancer risk
+        const cancerCausingIngredients = [
+            "phtalates",
+            "bisphenol",
+            "bisphénol A ",
+            "dyes",
+            "BPA",
+            "BPS",
+            "alkylphenols",
+            "preservatives",
+            "azoiques",
+            "formaldehyde",
+            "isothiazolinones",
+             "paraben",
+             "methylparaben",
+             "ethylparaben",
+             "propylparaben", 
+             "butylparaben",
+             "lilial",
+             "lyral",
+             "BHT",
+            
+            // Add more ingredients as needed
+        ];
+
+        // Function to check if an ingredient can cause cancer
+        function checkIngredient(ingredient) {
+            
+            const normalizedIngredient = ingredient.toLowerCase().trim();
+            if (cancerCausingIngredients.includes(normalizedIngredient)) {
+                
+                let message;
+                switch (normalizedIngredient) {
+                    case  "phtalates": message =  "Phthalates are classified as endocrine disruptors. This means that they can interfere with the hormonal system by mimicking or blocking the action of natural hormones, such as estrogen Hormone mimicry Disruption of hormone synthesis.";break;
+                    case  "bisphenol": message = "Le bisphenol est un perturbateur endocrinien. Cela signifie qu'il imite l'hormone œstrogène, pouvant ainsi interférer avec le système hormonal.";break;
+                    case  "bisphenol A": message = "BPA is an endocrine disruptor. This means that it mimics the hormone estrogen, potentially interfering with the hormonal system.";break;
+                    case  "dyes": message = "Dyes work by coloring skin or hair cells. They can penetrate to different depths depending on their chemical nature and formulation.Some dyes contain chemicals that could interfere with biological processes and increase the risk of cancer. They can act as endocrine disruptors, substances that can interfere with the hormonal system. However, hormonal imbalances are involved in the development of certain cancers, including breast cancer.";break;
+                    case  "BPS": message = "BPS could promote the proliferation of breast cancer cells, particularly in women with genetic mutations associated with an increased risk of breast cancer"; break;
+                    case  "alkylphenols": messsage = "Alkylphenols are endocrine disruptors. This means they can interfere with the hormonal system by mimicking or blocking the action of natural hormones, such as estrogen.";break;
+                    case  "preservatives": message = "Concern about cosmetic preservatives and breast cancer is primarily related to their endocrine disrupting potential. Parabens, for example, have been found in breast tumor tissues. This led to the hypothesis that these substances could promote the development of certain tumors by mimicking the action of hormones.";break;
+                    case  "azoiques": message  = "The main problem with azo compounds is that they can degrade under certain conditions, notably under the action of light or certain bacteria, and release aromatic amines. These amines can be toxic and potentially carcinogenic.The direct link between azo compounds and breast cancer has not been clearly established by conclusive scientific studies. However, several elements may raise questions:Skin absorption Chronic exposure Hormonal disruption";break;
+                    case  "formaldehyde":message =   "";break;
+                    case  "isothiazolinones":message ="The direct link between isothiazolinones and breast cancer is not clearly established by scientific research. However, several concerns were raised:Severe skin allergies:Endocrine disruption: that is, they could interfere with the hormonal system.Bioaccumulation";break;
+                    case  "paraben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                    case  "methylparaben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                    case  "ethylparaben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                    case  "propylparaben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                    case  "butylparaben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                    case  "lilial": message = "Endocrine disruptors and breast cancer: By disrupting this system, substances like Lilial could promote cell proliferation and increase the risk of developing certain types of cancer, including breast cancer.";break;
+                    case  "lyral": message = "The link with breast cancer: By disrupting this system, substances like Lyral could theoretically promote cell proliferation and increase the risk of developing certain types of cancer, including breast cancer.";break;
+                    case  "BHT": message = "BHT is an antioxidant that protects cosmetic products from oxidation by neutralizing free radicals. However, there are concerns about its potential health effects, particularly in relation to the development of breast cancer. BHT may interfere with the hormonal system, which could lead to hormonal imbalances associated with an increased risk of certain cancers, including breast cancer. Animal studies have shown that BHT may promote the development of tumors under certain conditions. Additionally, BHT can be absorbed by the body and distributed to different organs, including breast tissue.";break;
+                        default : message = "";
+                }
+                document.getElementById("result").innerHTML = `<ul> ${ingredient} is associated with an increased cancer risk.<br></li>`;
+                       document.getElementById("result").innerHTML += message;
+                     
+            } else {
+                document.getElementById("result").innerHTML =`${ingredient} is not listed as a cancer-causing ingredient.`;
+            }
+        }
+
+        // Event listener for the button
+        document.getElementById("checkButton").addEventListener("click", function()  {
+            const ingredientInput = document.getElementById("ingredient").value;
+           checkIngredient(ingredientInput);
+        });
+    </script>
+</body>
+</html>
+
+
+

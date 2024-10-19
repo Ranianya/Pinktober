@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body{
+        background-color: rgb(241, 223, 226);
+      }
+      .bigbox {
+        background-color: rgb(231, 90, 114);/* rgb(248, 233, 236); */
+        font-family: Arial, sans-serif;
+        
+        background-color: rgb(254, 153, 170);
+        width: 800px;
+        height: 500px;
+    
+    color:#fff;
+    margin:100px auto 0;
+    border-radius:20px;
+    padding:40px 35px 20px 35px;
+    text-align: center;
+    }
+    .litterbox{
+      
+      display:flex;
+       justify-content: space-between;
+
+       background-color: rgb(245, 223, 228);
+       font-family: Arial, sans-serif;
+       margin: 20px;
+       
+       width: 400px;
+      max-height: 500px;
+   
+   color:#161515;
+   
+   border-radius:20px;
+   padding:40px 35px;
+   box-shadow: 1px 1px 2px 2px rgb(254, 253, 254);
+
+    }
+    input{
+      outline: none;
+      height: 30px;;
+    }
+
+    #button{
+      display: flex;
+      flex-direction: column;
+     
+    }
+   img{
+    width: 60px;
+    height: 100px;
+    border-radius: 20%;
+    width: 250px;
+       height: 300px;
+       padding:40px 35px;
+       
+   }
+   .photo{
+    display: flex;
+    justify-content: space-between;
+    margin:-10px;
+   }
+   #btn{
+    height: 20px;
+    width: 55px;
+    margin: auto;
+   }
+   #risk{
+    font-size: 30px;
+    margin:0px 30px 45px 30px;
+    font-weight: bold;
+}
+   #check{
+    width:  500px;
+    
+   }
+   #in{
+    font-weight: bold;
+    font-size: larger;
+   }
+   #mainbox{
+    background-color: rgb(245, 188, 197);
+   
+     width:600px; 
+     height:700px;
+     display:inline-block;
+     color: black;
+    margin-top: 5%;
+     border-radius: 40px;
+     margin-right:70px;
+     margin-left:100px;
+     border-width: 5px;
+     border: 2px solid black;
+     display:inline-block;
+
+}
+#mainbox h2{
+    padding-top:5%;
+    padding-left:5%;
+    padding-bottom:5%;
+    padding-right:7%;
+    font-size:20px;
+    text-align:center;
+
+}   
+#liste{
+    font-size:10px;
+}
+#box{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    display: flex;
+    font-size:20px;
+    background-color: rgb(235, 178, 187);
+    border-radius: 15%;
+    
+}
+.parag{
+    font-size:17px;
+
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+a{
+    color: black;
+}
+#box1{
+    background-color: rgb(241, 135, 152);
+   text-align:center;
+    width:200px; 
+    height:190px;
+    display:inline-block;
+    color: black;
+   
+    border-radius: 10px;
+    margin-right:80px;
+    margin-left:90px;
+    border-width: 5px;
+  
+    border: 2px solid black;
+    
+
+}
+#box2{
+    text-align:center;
+     width: 200px;
+      height: 190px;
+       
+       display:inline-block;
+       background-color:rgb(248, 229, 232);
+       color: black;
+       justify-content: center;
+       padding-left: 5px;
+       padding-right: 7px;
+    border-radius: 10px;
+    margin-left:50px;
+    margin-top: 0px;
+    border: 2px solid black;
+    padding-top: 20px;
+   
+   
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px ;
+    background: rgba(255, 255, 255, 0.438);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(0px);
+    border-bottom: 2px solid rgba(24, 20, 20, 0.582);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.header::before::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(12, 12, 12, 0.205), transparent);
+    transition: .5s;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.inputtag{
+    margin-top: 20px;
+}
+nav ul li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px white;
+}
+.content li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+nav ul li {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+nav ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius :5px;
+    padding:5px;
+}
+
+li:hover{
+box-shadow:0 0 5px white;
+
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    <header class="header">
+        <h1 style="color: rgb(242, 139, 156);">PinkCheck</h1>
+		
+        <nav>
+            <ul>
+                 <li><a href="hh.html">Home</a></li>
+			        	<li><a href="About us">About Us</a></li>
+                <li><a href="algeb.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header> 
+
+    <div class="bigbox">
+      <p id="risk" >
+        Cancer Risk Ingredient Checker :
+      </p>
+      <div class="photo">
+      <div class="litterbox">
+        
+        <div id="check">
+            <p id="in">Please enter an ingredient: </p>
+                <div id="button">
+                  
+                  
+                    <div id="checkbtn"></div>
+                     <input type="text" id="ingredient" placeholder="example : bisphenol....">
+                         <div id="checkbtn">
+                            <button id="checkButton">Check</button>
+                         </div>
+                     <p id="result">.</p>
+              
+                
+                  </div>
+         </div>
+  
+         
+      </div>
+      <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRysb2o26uHx4xasaWy40G8uqVu0oUyYgbaYw&ss" alt="cancer" >
+      </div>
+      
+    </div>
+    </div>
+<hr>
+
+    <div id="box"  style="display: flex;">
+    <img src="https://cdn-icons-png.freepik.com/256/16660/16660815.png?ga=GA1.1.891441325.1711750970&semt=ais_hybrid" alt="research" style="width:50px; height:50px;margin-top:100px;margin-right:5px;">
+   <div class="parag">
+    <h3><a href="hh.html"> Home</a></h3>
+    <div id="box1"  style="display:inline-block" required>
+     <p class="parag" ><li >Your health, our priority : </li><br>reliable information on breast cancer prevention.</p>
+    </div>
+   </div>
+   <div class="parag">
+    <h3 style="margin-left:0px;margin-bottom:0px;"><a href="page2.html">Documentation</a></h3>
+    <div id="box2" style="display:inline-block" >
+        <p ><li >Is this ingredient linked to breast cancer?</li><br> We check the latest studies for you.</p> 
+    </div>
+    <img src="https://cdn-icons-png.freepik.com/128/8825/8825291.png" alt="documentation" style="width:70px; height:70px;margin-top:50px;margin-left:20px;">
+   </div>
+</div>
+    <script>
+      // List of ingredients that may increase cancer risk
+      const cancerCausingIngredients = [
+          "phtalates",
+          "bisphenol",
+          "bisphénol A ",
+          "dyes",
+          "BPA",
+          "BPS",
+          "alkylphenols",
+          "preservatives",
+          "azoiques",
+          "formaldehyde",
+          "isothiazolinones",
+           "paraben",
+           "methylparaben",
+           "ethylparaben",
+           "propylparaben", 
+           "butylparaben",
+           "lilial",
+           "lyral",
+           "BHT",
+          
+          // Add more ingredients as needed
+      ];
+
+      // Function to check if an ingredient can cause cancer
+      function checkIngredient(ingredient) {
+          
+          const normalizedIngredient = ingredient.toLowerCase().trim();
+          if (cancerCausingIngredients.includes(normalizedIngredient)) {
+              
+              let message;
+              switch (normalizedIngredient) {
+                  case  "phtalates": message =  "Phthalates are classified as endocrine disruptors. This means that they can interfere with the hormonal system by mimicking or blocking the action of natural hormones, such as estrogen Hormone mimicry Disruption of hormone synthesis.";break;
+                  case  "bisphenol": message = "Le bisphenol est un perturbateur endocrinien. Cela signifie qu'il imite l'hormone œstrogène, pouvant ainsi interférer avec le système hormonal.";break;
+                  case  "bisphenol A": message = "BPA is an endocrine disruptor. This means that it mimics the hormone estrogen, potentially interfering with the hormonal system.";break;
+                  case  "dyes": message = "Dyes work by coloring skin or hair cells. They can penetrate to different depths depending on their chemical nature and formulation.Some dyes contain chemicals that could interfere with biological processes and increase the risk of cancer. They can act as endocrine disruptors, substances that can interfere with the hormonal system. However, hormonal imbalances are involved in the development of certain cancers, including breast cancer.";break;
+                  case  "BPS": message = "BPS could promote the proliferation of breast cancer cells, particularly in women with genetic mutations associated with an increased risk of breast cancer"; break;
+                  case  "alkylphenols": messsage = "Alkylphenols are endocrine disruptors. This means they can interfere with the hormonal system by mimicking or blocking the action of natural hormones, such as estrogen.";break;
+                  case  "preservatives": message = "Concern about cosmetic preservatives and breast cancer is primarily related to their endocrine disrupting potential. Parabens, for example, have been found in breast tumor tissues. This led to the hypothesis that these substances could promote the development of certain tumors by mimicking the action of hormones.";break;
+                  case  "azoiques": message  = "The main problem with azo compounds is that they can degrade under certain conditions, notably under the action of light or certain bacteria, and release aromatic amines. These amines can be toxic and potentially carcinogenic.The direct link between azo compounds and breast cancer has not been clearly established by conclusive scientific studies. However, several elements may raise questions:Skin absorption Chronic exposure Hormonal disruption";break;
+                  case  "formaldehyde":message =   "";break;
+                  case  "isothiazolinones":message ="The direct link between isothiazolinones and breast cancer is not clearly established by scientific research. However, several concerns were raised:Severe skin allergies:Endocrine disruption: that is, they could interfere with the hormonal system.Bioaccumulation";break;
+                  case  "paraben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                  case  "methylparaben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                  case  "ethylparaben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                  case  "propylparaben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                  case  "butylparaben": message = "Hormone mimicry: The chemical structure of some parabens is similar to estrogen, female hormones that play a role in breast cell growth. By attaching to estrogen receptors, parabens could stimulate the proliferation of these cells, thus promoting the development of tumors.";break;
+                  case  "lilial": message = "Endocrine disruptors and breast cancer: By disrupting this system, substances like Lilial could promote cell proliferation and increase the risk of developing certain types of cancer, including breast cancer.";break;
+                  case  "lyral": message = "The link with breast cancer: By disrupting this system, substances like Lyral could theoretically promote cell proliferation and increase the risk of developing certain types of cancer, including breast cancer.";break;
+                  case  "BHT": message = "BHT is an antioxidant that protects cosmetic products from oxidation by neutralizing free radicals. However, there are concerns about its potential health effects, particularly in relation to the development of breast cancer. BHT may interfere with the hormonal system, which could lead to hormonal imbalances associated with an increased risk of certain cancers, including breast cancer. Animal studies have shown that BHT may promote the development of tumors under certain conditions. Additionally, BHT can be absorbed by the body and distributed to different organs, including breast tissue.";break;
+                      default : message = "";
+              }
+              document.getElementById("result").innerHTML = `${ingredient}  is associated with an increased cancer risk. <br>  Detailing : <br>`;
+                     document.getElementById("result").innerHTML += message;
+
+                   
+          } else {
+              document.getElementById("result").innerHTML =` - ${ingredient} is not listed as a cancer-causing ingredient.`;
+          }
+      }
+
+      // Event listener for the button
+      document.getElementById("checkButton").addEventListener("click", function()  {
+          const ingredientInput = document.getElementById("ingredient").value;
+         checkIngredient(ingredientInput);
+      });
+  </script>
+  </body>
+</html>
